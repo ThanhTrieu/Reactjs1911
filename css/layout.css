@@ -1,0 +1,21 @@
+*{
+  /* reset trinh duyet */
+  margin: 0;
+  padding: 0;
+}
+/* id selector */
+/* #myTitle {
+  color: yellow;
+} */
+/* html selector */
+h1.title {
+  color: green;
+}
+/* class selector */
+.title {
+  color: blue;
+}
+/* attribute selector */
+input[type="number"] {
+  border: 1px solid red;
+}

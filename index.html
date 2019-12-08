@@ -117,5 +117,99 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/s5vCFndRcxQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <br>
   <iframe width="600" height="400" src="https://vnexpress.net"></iframe>
+  <br><br>
+  <!-- HTML layout -->
+  <!-- cac the the html chuyen di lam dan dung bo cuc cua trang web -->
+  <header>
+    <!-- thong tin co ban gioi thieu ve website -->
+    <!-- nam ben trai -->
+    <div class="logo">
+      <h1>This is logo</h1>
+    </div>
+    <!-- nam ben phai -->
+    <div class="banner">
+      <h4>This is banner</h4>
+    </div>
+  </header>
+  <!-- menu -->
+  <nav>
+    <!-- tao link dieu huong trang -->
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Product</a></li>
+    </ul>
+  </nav>
+  <!-- tao noi dung cua trang web -->
+  <main>
+    <!-- content left -->
+    <section>
+      <article>
+        <h5>this is article</h5>
+      </article>
+      <section>
+        <h5>This isc content</h5>
+      </section>
+    </section>
+    <!-- content right -->
+    <aside>
+      <h5>This is aside </h5>
+    </aside>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <h5>This is footer</h5>
+  </footer>
+  <br><br>
+  <!-- html Form -->
+  <form action="server.js" method="post||get">
+    <!-- truyen tai thong tin trong from di dau do -->
+    <label for="user">Username</label>
+    <input type="text" id="user" name="user" class="user" />
+    <br><br>
+    <label for="pass">Password</label>
+    <input type="password" id="pass" name="pass" class="pass" />
+    <br><br>
+    <label for="number">Number</label>
+    <input type="number" id="number" name="number" class="number" />
+    <br><br>
+    <label for="color">Color</label>
+    <input type="color" id="color" name="color" class="color" />
+    <br><br>
+    <label for="date">Date</label>
+    <input type="month" id="date" name="date" class="date" />
+    <br><br>
+    <label for="birthday">Ngay sinh</label>
+    <select id="birthday" name="birthday" multiple>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option selected value="4">4</option>
+    </select>
+    <br><br>
+    <label for="nu">Nu</label>
+    <input type="radio" id="nu" name="gender">
+    <br><br>
+    <label for="nam">Nam</label>
+    <input checked type="radio" id="nam" name="gender">
+    <br><br>
+
+    <label for="agree">Vui long dong y voi cac quy dinh cua dien dan</label>
+    <input checked  type="checkbox" id="agree" name="agree">
+    <br><br>
+    <label for="content">Content</label>
+    <textarea name="content" id="content" rows="5" cols="50"></textarea>
+    <br><br>
+    <!-- <button type="button">click me</button> -->
+    <br><br>
+    <button type="submit"> click me 2</button>
+    <br><br>
+    <label for="email">Email</label>
+    <input type="email" id="email">
+    <br><br>
+    <label for="url">URL</label>
+    <input type="url" id="url">
+  </form>
 </body>
 </html>
