@@ -1,0 +1,85 @@
+div.box{
+  width: 200px;
+  height: 100px;
+  border: 1px solid red;
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: auto; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+div.container {
+  width: 980px;
+  margin: auto;
+  border: 1px solid red;
+}
+div.container div.child-1 {
+  width: 50%;
+  background-color: yellow;
+  height: 350px;
+  float: left;
+}
+div.container div.child-2 {
+  width: 50%;
+  background-color: blue;
+  height: 350px;
+  float: left;
+}
+/* responsive */
+@media only screen and (min-width: 360px) {
+  /* override lai cac css cu o day */
+  div.container div.child-1 {
+    width: 100%;
+    float: none;
+  }
+  div.container div.child-2 {
+    width: 100%;
+    float: none;
+  }
+}
+
+div.content {
+  width: 350px;
+  height: 350px;
+  background: pink;
+  /* background: linear-gradient(to top,yellow, blue,green,red); */
+  background: -webkit-linear-gradient(45deg,yellow, blue,green,red);
+  background: -moz-linear-gradient(45deg,yellow, blue,green,red);
+  background: -ms-linear-gradient(45deg,yellow, blue,green,red);
+  background: -o-linear-gradient(45deg,yellow, blue,green,red);
+  background: linear-gradient(45deg,yellow, blue,green,red);
+
+  /* di chuyen phan tu */
+  /* transform: translate(100px, 200px); */
+  /* quay phan phan tu */
+  /* -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); */
+  /* keo gian phan tu */
+  /* w x 5 | hx1 */
+  /* transform: scale(5,1); */
+  /* transform: skew(10deg, 40deg); */
+  transition: all 10s ease 0s;
+  animation: MyAnimation 1s ease 0s infinite alternate;
+  position: relative;
+}
+@keyframes MyAnimation {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+
+div.content:hover {
+  transform: rotate(45deg);
+  opacity: 0;
+  border-radius: 50%;
+}
+div.content-2 {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+div.content-2 p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
